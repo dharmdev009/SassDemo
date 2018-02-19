@@ -1,0 +1,37 @@
+$primary-color :#fff;
+
+$third-color:green;
+
+
+
+//Example of nesting class and nested div
+.listmainclass {
+
+    .padding-left {
+        padding-left: 10px;
+    }
+
+    .padding-right {
+        padding-right: 10px;
+    }
+    //Variable using example
+    div {
+        background-color: $primary-color;
+    }
+
+    //Variable example
+    .item-note {
+        @extend .padding-left, .padding-right;
+        color: map-get($colors, danger);
+    }
+
+    //Inheritance example
+    span {
+        color: $third-color;
+    }
+
+    //nested example
+    ion-icon:before {
+        @extend .padding-left, .padding-right;
+    }
+}

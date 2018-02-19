@@ -1,0 +1,21 @@
+
+
+.page-item-details {
+    .padding-left {
+        padding-left:10px;
+    }
+
+    .padding-right {
+        padding-right:10px;
+    }
+
+    h3, h4 {
+        @extend .padding-right, .padding-left;
+    }
+
+    h3 {
+        color:red;
+    }
+}
+
+
